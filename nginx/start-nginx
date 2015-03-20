@@ -1,0 +1,41 @@
+#!/bin/bash
+
+set -e
+
+ARCH=`/bin/uname -m`
+
+CWD=`pwd`
+
+case ${ARCH} in
+
+"x86_64")
+  BIN="g472_linux64/sbin/nginx"
+  ;;
+
+"i686")
+  BIN="g472_linux32/sbin/nginx"
+  ;;
+
+esac
+
+CRT="${CWD}/conf/server.crt"
+if [[ ! -f "${CRT}" ]]; then
+  gpg --output "${CRT}" --decrypt "${CRT}.gpg"
+fi
+
+KEY="${CWD}/conf/server.key"
+if [[ ! -f "${KEY}" ]]; then
+  gpg --output "${KEY}" --decrypt "${KEY}.gpg"
+fi
+
+DHPARAM="${CWD}/conf/dhparam.pem"
+if [[ ! -f "${DHPARAM}" ]]; then
+  gpg --output "${DHPARAM}" --decrypt "${DHPARAM}.gpg"
+fi
+
+${BIN} -c "${CWD}/conf/nginx.conf" -t -p "${CWD}/run" || exit 1
+
+${BIN} -c "${CWD}/conf/nginx.conf" -p "${CWD}/run"
+
+PID=`/bin/cat /var/run/nginx.pid`
+echo "Started with PID ${PID}"
