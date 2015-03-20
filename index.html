@@ -1,0 +1,27 @@
+---
+layout: layout
+title: "Niklas Lindblad"
+---
+
+<section class="content">
+  <h1>POSTS</h1>
+  <ul class="listing">
+   {% for post in site.posts %}
+    {% if post.language == 'english' %}
+    <li>
+      <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+  <h2>SVENSKA / SWEDISH</h2>
+  <ul class="listing">
+   {% for post in site.posts %}
+    {% if post.language != 'english' %}
+    <li>
+      <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</section>

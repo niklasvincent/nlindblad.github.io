@@ -1,0 +1,18 @@
+---
+layout: layout
+---
+
+<article class="post">
+  <section class="post__date">
+    {{ page.date | date: "%B %e, %Y" }}
+  </section>
+  <h1 class="post__title">
+    <a class="post__title__link" href="{{ page.url }}">{{ page.title }}</a>
+  </h1>
+
+  {{ content }}
+  <div class="pull"></div>
+  {% include twitter.html %}
+  <hr>
+  {% include disqus.html %}
+</article>
