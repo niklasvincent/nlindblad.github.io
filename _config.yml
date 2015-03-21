@@ -1,6 +1,6 @@
-exclude: nginx
+exclude: [nginx]
 markdown: rdiscount
-pygments: true
+highlighter: pygments
 permalink: /:year/:month/:title
 rdiscount:
   extensions: [smart]
