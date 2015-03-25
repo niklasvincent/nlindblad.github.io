@@ -5,21 +5,11 @@ title: "Niklas Lindblad"
 
 <section class="content">
   <h1>POSTS</h1>
-  <ul class="listing">
+  <ul class="post__list">
    {% for post in site.posts %}
     {% if post.language == 'english' %}
-    <li>
-      <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endif %}
-    {% endfor %}
-  </ul>
-  <h2>SVENSKA / SWEDISH</h2>
-  <ul class="listing">
-   {% for post in site.posts %}
-    {% if post.language != 'english' %}
-    <li>
-      <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+    <li class="post__item">
+      <span class="post__date">{{ post.date | date: "%d %b  %Y" }}</span> <a class="post__link" href="{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endif %}
     {% endfor %}
