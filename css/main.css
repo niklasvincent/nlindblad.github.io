@@ -57,7 +57,7 @@ main {
     margin-left: 5%;
     margin-right: 10%;
 }
-            
+
 #content {
     margin-left: 230px; /* Same as 'nav' width */
 }
@@ -87,10 +87,20 @@ img {
     max-width: 600px;
 }
 
-a.post__title__link {
-    color: #000;
+ul.post__list {
+    list-style: none;
+}
+
+li.post__item {
+    padding: 5px 0 5px 0;
 }
 
 .post__date {
+    font-family: 'Droid Sans Mono';
+    font-size: 0.8em;
+    color: grey;
+}
 
+a.post__link {
+    padding-left: 6px;
 }
