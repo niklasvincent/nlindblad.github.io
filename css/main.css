@@ -104,3 +104,7 @@ li.post__item {
 a.post__link {
     padding-left: 6px;
 }
+
+code {
+    font-family: 'Droid Sans Mono';
+}
