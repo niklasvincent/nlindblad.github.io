@@ -1,17 +1,16 @@
 ---
-layout: layout
 title: "Niklas Lindblad"
+layout: default
 ---
 
-<section class="content">
-  <h1>POSTS</h1>
-  <ul class="post__list">
+<h1>Niklas Lindblad</h1>
+
+<ul class="post__list">
    {% for post in site.posts %}
-    {% if post.language == 'english' %}
+   {% if post.language == 'english' %}
     <li class="post__item">
       <span class="post__date">{{ post.date | date: "%d %b  %Y" }}</span> <a class="post__link" href="{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endif %}
     {% endfor %}
-  </ul>
-</section>
+ </ul>

@@ -1,0 +1,125 @@
+header nav {
+  position: absolute;
+  top: 2%;
+  bottom: 0;
+  left: 20%;
+  right: 20%;
+  margin: auto;
+}
+
+/* Strip the ul of padding and list styling */
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+
+/* Create a horizontal list with spacing */
+nav li {
+	display:inline-block;
+	float: left;
+	margin-right: 1px;
+}
+
+/* Style for menu links */
+nav li a {
+	display: block;
+	min-width: 140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+}
+
+/* Style for dropdown links */
+nav li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+}
+
+/* Hover state for dropdown links */
+nav li:hover ul a:hover {
+
+}
+
+/* Hide dropdown links until they are needed */
+nav li ul {
+	display: none;
+}
+
+/* Make dropdown links vertical */
+nav li ul li {
+	display: block;
+	float: none;
+}
+
+/* Prevent text wrapping */
+nav li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/* Display the dropdown on hover */
+nav ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/* Style 'show menu' label button and hide it by default */
+nav .show-menu {
+	text-decoration: none;
+	color: #fff;
+	background: #19c589;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/* Hide checkbox */
+nav input[type=checkbox]{
+    display: none;
+}
+
+/* Show menu when invisible checkbox is checked */
+nav input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (max-width : 760px){
+
+	header nav {
+	  position: relative;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  z-index: 100;
+	  background: #000;
+	}
+
+	/* Make dropdown links appear inline */
+	nav ul {
+		position: static;
+		display: none;
+	}
+	/* Create vertical spacing */
+	nav li {
+		margin-bottom: 1px;
+	}
+	/* Make all menu links full width */
+	nav ul li, li a {
+		width: 100%;
+		z-index: 100;
+		border-bottom: 1px solid #efefef;
+	}
+	/* Display 'show menu' link */
+	nav .show-menu {
+		display: block;
+	}
+}

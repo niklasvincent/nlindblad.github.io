@@ -16,3 +16,4 @@ author :
   github : nlindblad
   twitter : nlindblad
   email: niklas@lindblad.info
+exclude:      ["Gruntfile.js", "README.md", "package.json", "node_modules"]

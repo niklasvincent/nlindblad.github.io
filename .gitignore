@@ -1,2 +1,9 @@
 _site/
 .sass-cache/
+node_modules
+css
+_css/main.css
+_css/main.css.map
+_css/menubar.css
+_css/menubar.css.map
+.DS_Store
