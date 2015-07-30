@@ -15,7 +15,7 @@
   margin: 0 0 15px;
 }
 
-.date {
+#timeline .date {
   margin-top: -10px;
   top: 50%;
   left: -158px;
@@ -24,7 +24,7 @@
   position: absolute;
 }
 
-.circle {
+#timeline .circle {
   margin-top: -10px;
   top: 50%;
   left: -24px;
@@ -37,7 +37,7 @@
   position: absolute;
 }
 
-.content {
+#timeline .content {
   max-height: 20px;
   padding: 50px 20px 0;
   border-color: transparent;
@@ -46,7 +46,7 @@
   border-radius: 0.5em;
   position: relative;
 }
-.content:before, .content:after {
+#timeline .content:before, #timeline .content:after {
   content: "";
   width: 0;
   height: 0;
@@ -56,19 +56,19 @@
   right: 100%;
   margin-right: 0.5em;
 }
-.content:before {
+#timeline .content:before {
   border-right-color: inherit;
   border-width: 7px;
   top: 50%;
   margin-top: -7px;
 }
-.content:after {
+#timeline .content:after {
   border-right-color: #000;
   border-width: 5px;
   top: 50%;
   margin-top: -5px;
 }
-.content p {
+#timeline .content p {
   max-height: 0;
   color: transparent;
   text-align: justify;
@@ -77,7 +77,7 @@
   overflow: hidden;
 }
 
-label {
+#timeline label {
   font-size: 1.3em;
   position: absolute;
   z-index: 100;
@@ -86,24 +86,24 @@ label {
   transition: transform 0.2s linear;
 }
 
-.radio {
+#timeline .radio {
   display: none;
 }
 
-.relative label {
+#timeline .relative label {
   cursor: auto;
   transform: translateX(42px);
 }
-.radio:checked + .relative .circle {
+#timeline .radio:checked + .relative .circle {
   background: #fff;
 }
-.content {
+#timeline .content {
   max-height: 180px;
   margin-right: 20px;
   transform: translateX(20px);
   transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
 }
-.content p {
+#timeline .content p {
   max-height: 200px;
   color: #000;
   font-size: 0.9em;
