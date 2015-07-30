@@ -9,15 +9,16 @@ layout: compress
     <title>
       {{ page.title }}
     </title>
-    <meta content="{{ site.author.name }}" name="author">
-    <meta content="{{ site.description }}" name="description">
+    <meta content="{{ site.author.name }}" name="author" />
+    <meta content="{{ site.description }}" name="description" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href='/feed.xml' rel='alternate' type='application/atom+xml'>
+    <link rel="author" href="{{ site.author.url }}" />
     <link href="{{ site.canonical }}" rel="canonical">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <style type="text/css">{% include style.css %}</style>
   </head>
-  <body>
+  <body itemscope itemtype="http://schema.org/WebPage">
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->

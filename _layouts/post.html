@@ -1,15 +1,17 @@
 ---
 layout: default
 ---
-<article class="post">
-  <h1 class="post__title">
+<article itemscope itemtype="http://schema.org/BlogPosting" class="post">
+  <h1 itemprop="headline" class="post__title">
     <a class="post__title__link" href="{{ page.url }}">{{ page.title }}</a>
   </h1>
-  <span class="post__date">
+  <span itemprop="datePublished" class="post__date">
     {{ page.date | date: "%B %e, %Y" }}
   </span>
 
-  {{ content }}
+  <section itemprop="text">
+  	{{ content }}
+  </section>
 
   {% include disqus.html %}
 </article>
