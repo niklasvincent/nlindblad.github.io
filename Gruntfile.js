@@ -39,7 +39,7 @@ module.exports = function(grunt) {
             },
             target: {
                 files: [{
-                    'css/style.css': [
+                    '_includes/style.css': [
                         '_css/normalize.min.css',
                         '_css/google-web-fonts.css',
                         '_css/font-awesome.css',
