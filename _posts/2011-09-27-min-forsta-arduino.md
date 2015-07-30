@@ -11,5 +11,5 @@ tags:
 
 <p>Mer uppdateringar när jag har hunnit bygga något. En webbserver som visar temperaturen på en statisk HTML-sida kanske?</p>
 
-<img src="https://s3.amazonaws.com/cdn.niklaslindblad.se/wordpress/wp-content/uploads/2011/09/IMG_0775-300x224.jpg" />
-<img src="https://s3.amazonaws.com/cdn.niklaslindblad.se/wordpress/wp-content/uploads/2011/09/IMG_0776-300x224.jpg" />
+<img src="{{ site.cloudfront_url }}/wordpress/wp-content/uploads/2011/09/IMG_0775-300x224.jpg" />
+<img src="{{ site.cloudfront_url }}/wordpress/wp-content/uploads/2011/09/IMG_0776-300x224.jpg" />

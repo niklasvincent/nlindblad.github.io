@@ -63,4 +63,4 @@ Detach with ```CTRL + A + D```.
 
 ## Watch the results in Graphite
 
-<img src="https://s3.amazonaws.com/cdn.niklaslindblad.se/images/openelec-graphite.png" /> 
+<img src="{{ site.cloudfront_url }}/images/openelec-graphite.png" /> 

@@ -63,7 +63,7 @@ I simply use the health check to check if it can retrieve an empty text file in 
 
 Despite getting numerous alarms from services like Pingdom when my VPS goes offline, I wanted a visual clue on the blog itself that it is being served by the secondary server (the Raspberry Pi). If you see this, then this blog is not currently being served by Linode:
 
-<img src="https://s3.amazonaws.com/cdn.niklaslindblad.se/images/rpi-notice.png" style="border: 1px solid #000;" />
+<img src="{{ site.cloudfront_url }}/images/rpi-notice.png" style="border: 1px solid #000;" />
 
 which seems like fair usage of the [Raspberry Pi](http://raspberrypi.org) logo
 

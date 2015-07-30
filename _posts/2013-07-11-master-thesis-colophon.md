@@ -14,7 +14,7 @@ I have been using [BitBucket](https://bitbucket.org) for years to handle softwar
 
 Git allows for selectively committing certain lines within a file, which helps with keeping commits clean and easy to follow. However, using this feature from the command line might sometimes be a daunting task. I used [SourceTree](http://www.sourcetreeapp.com/) to work with my main Git repository.
 
-<img width="800px" src="https://d2tjdh98vh6jzp.cloudfront.net/images/sourcetree.png" />
+<img width="800px" src="{{ site.cloudfront_url }}/images/sourcetree.png" />
 
 I used a Git post.commit hook (*.git/hooks/post-commit*) in order to include the current Git revision in my LaTeX document:
 
@@ -26,14 +26,14 @@ git log --pretty=format:'%h' -n 1 > "${REVISION_FILE}"</pre>
 
 After including *version.tex* in the header, the result looked like this:
 
-<img src="https://d2tjdh98vh6jzp.cloudfront.net/images/git-revision-latex.png" style="border: 1px solid black;" />
+<img src="{{ site.cloudfront_url }}/images/git-revision-latex.png" style="border: 1px solid black;" />
 
 ## LaTeX for Typesetting ##
 I used a LaTeX template I have had laying around since freshman year for lab reports. Most universities provide their own templates and it turns out I should probably have gone with [the standard one by the faculty](http://www.eit.lth.se/index.php?gpuid=285&L=1).
 
 Using the hyperref package and some nice options from the xcolor package, the final PDF had clickable hyper references for things like citations and definitions:
 
-<img src="https://d2tjdh98vh6jzp.cloudfront.net/images/pdf-hyperref.png" style="border: 1px solid black;" />
+<img src="{{ site.cloudfront_url }}/images/pdf-hyperref.png" style="border: 1px solid black;" />
 
 The document class is *article* and the following packages were used:
 
@@ -70,14 +70,14 @@ matfig2pgf('figwidth', 17, 'filename', '../../doc/figures/asymmetrical_scaling.p
 
 The final plots are instructions for the PGF package on how to render using LaTeX. This means the fonts used in the plot will be the same as the rest of the document.
 
-<img src="https://d2tjdh98vh6jzp.cloudfront.net/images/pgfplot.png" />
+<img src="{{ site.cloudfront_url }}/images/pgfplot.png" />
 
 ## Google Docs for Drawing Figures ##
 The thesis relies heavily on electrical circuit schematics, but none of the tools I tried ([Circuit Lab](https://www.circuitlab.com/), [Scheme-it](http://www.digikey.com/schemeit)) produced satisfying results. I ended up using [this Google Docs Drawing template](https://drive.google.com/previewtemplate?id=1M00TjVs5Kp4BvP4EY3FMdINx2WzSoTNyclcNM8e7DUc#).
 
 Of course Google Docs Drawings do not treat lines as wires or provide easy snapping for perfect alignment, so everything was done *by hand*. Placing components, drawing lines, adjusting for alignment, etc.
 
-<img src="https://d2tjdh98vh6jzp.cloudfront.net/images/gdoc-circuit.png" />
+<img src="{{ site.cloudfront_url }}/images/gdoc-circuit.png" />
 
 After exporting to PDF from Google Docs I used [PDFCrop](http://pdfcrop.sourceforge.net/) (a small Perl script) for removing unnecessary white space.
 
