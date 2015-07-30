@@ -5,19 +5,9 @@ layout: default
 
 <h1>Projects</h1>
 
-{% capture public_repositories %}
-  {% for repository in site.github.public_repositories %}
-    |{{ repository.watchers_count }}#{{ repository.name }}!{{ repository.html_url }}${{ repository.description }}
-  {% endfor %}
-{% endcapture %}
+{% assign sorted_repositories = site.github.public_repositories | sort: 'watchers_count' %}
 
-{% assign sorted_repositories = public_repositories | split: '|' | sort %}
-
-{% for repository_full_data in sorted_repositories %}
-    {% assign repository_data = repository_full_data | split: '#' %}
-    {% assign repository_name = repository_data | split: '!' %}
-    {% assign repository_html_url = repository_name[1] | split: '$' %}
-    {% assign repository_description = repository_html_url[1] %}
-    <h2><a href="{{ rrepository_html_url[0] }}" target="_blank">{{ repository_name[0] }}</a></h2>
-    <p>{{ repository_description }}</p>
+{% for repository in sorted_repositories reversed %}
+	<h2><a href="{{ repository.html_url }}" target="_blank">{{ repository.name }}</a></h2>
+	<p>{{ repository.description }}</p>
 {% endfor %}
