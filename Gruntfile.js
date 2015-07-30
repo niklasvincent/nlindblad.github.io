@@ -26,7 +26,7 @@ module.exports = function(grunt) {
                 },
                 files: {
                     '_css/main.css': '_sass/main.scss',
-                    '_css/menubar.css': '_sass/navigation/menubar.scss'
+                    '_css/menubar.css': '_sass/navigation/menubar.scss',
                 }
             }
         },
@@ -44,6 +44,7 @@ module.exports = function(grunt) {
                         '_css/google-web-fonts.css',
                         '_css/font-awesome.css',
                         '_css/main.css',
+                        '_css/timeline.css',
                         '_css/menubar.css',
                         '_css/pygments.css',
                     ]
