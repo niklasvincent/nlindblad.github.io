@@ -31,4 +31,4 @@ tags:
 
 <p>Det jag saknar just nu är ett gäng transistorer för att kunna bygga förstärkarkrestar till bland annat fotodioden, som ger en väldigt svag signal. Annars känns det som en bra början.</p>
 
-<img src="{{ 'wordpress/wp-content/uploads/2011/10/IMG_0794-300x224.jpg' | asset_url }}" />
+<img src="https://s3.amazonaws.com/cdn.niklaslindblad.se/wordpress/wp-content/uploads/2011/10/IMG_0794-300x224.jpg" />
