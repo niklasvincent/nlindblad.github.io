@@ -14,7 +14,7 @@ I have been using [BitBucket](https://bitbucket.org) for years to handle softwar
 
 Git allows for selectively committing certain lines within a file, which helps with keeping commits clean and easy to follow. However, using this feature from the command line might sometimes be a daunting task. I used [SourceTree](http://www.sourcetreeapp.com/) to work with my main Git repository.
 
-<img src="https://d2tjdh98vh6jzp.cloudfront.net/images/sourcetree.png" />
+<img width="800px" src="https://d2tjdh98vh6jzp.cloudfront.net/images/sourcetree.png" />
 
 I used a Git post.commit hook (*.git/hooks/post-commit*) in order to include the current Git revision in my LaTeX document:
 

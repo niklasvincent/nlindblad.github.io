@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Site styles
+   ========================================================================== */
+
+h1 a {
+   text-decoration: none;
+   color: $header-color;
+}
+
+main {
+   position: absolute;
+   top: 5%;
+   bottom: 0;
+   left: 20%;
+   right: 20%;
+   max-width: 1024px;
+}
+
+
+.social {
+   margin: 0;
+   padding: 0;
+}
+   .social ul {
+      list-style: none;
+      margin-left: -5%;
+   }
+
+   .social li {
+      padding-right: 0.5em;
+      float: left;
+   }
+
+/* ==========================================================================
+   Blog post styles
+   ========================================================================== */
+
+.post__title {
+   margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Media Queries
+
+   - Medium and large
+   - Medium
+   - Large
+   ========================================================================== */
+
+
+/* Medium and Up - Targets everything larger than mobile
+   ========================================================================== */
+
+@include break(medium-and-large) {
+
+}
+
+/* Medium - only targets 1st breakpoint. Styles 
+   ========================================================================== */
+
+@include break(medium) {
+
+}
+
+/* Large - only targets 2nd breakpoint. 
+   ========================================================================== */
+
+@include break(large) {
+
+}
+
+@media screen and (max-width : 760px){
+   main {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin-left: 4%;
+      margin-right: 4%;
+   }
+
+   .social li {
+      float: none;
+      padding-bottom: 0.5em;
+   }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "nlindblad.github.io",
+  "version": "0.0.1",
+  "description": "Personal website for Niklas Lindblad",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nlindblad/nlindblad.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nlindblad/nlindblad.github.io/issues"
+  },
+  "homepage": "https://github.com/nlindblad/nlindblad.github.io",
+  "devDependencies": {
+      "grunt": "~0.4.1",
+      "grunt-contrib-sass": "~0.7.4",
+      "grunt-contrib-cssmin": "~0.13.0",
+      "grunt-contrib-watch": "~0.6.1",
+      "grunt-contrib-concat": "~0.3.0",
+      "grunt-contrib-uglify": "~0.9.1"
+  }
+}

@@ -1,14 +1,11 @@
 ---
-layout: layout
 title: "Projects"
+layout: default
 ---
 
-<div class="container">
-  <section class="content ">
-  <h1 class="lowercase">/ Projects</h1>
+<h1>Projects</h1>
 
-   <p>See <a href="https://github.com/nlindblad">my Github profile</a>.</p>
-
-
-  </section>
-</div>
+{% for repository in site.github.public_repositories %}
+	<h2><a href="{{ repository.html_url }}" target="_blank">{{ repository.full_name }}</a></h2>
+	<p>{{ repository.description }}</p>
+{% endfor %}
