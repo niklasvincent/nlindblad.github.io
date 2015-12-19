@@ -2,10 +2,6 @@
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Nginx stack for blog",
   "Parameters": {
-    "GithubUsername": {
-      "Description": "Github username. Used for downloading SSH keys.",
-      "Type": "String"
-    },
     "SslCertificateArn": {
       "Description": "SSL certificate ARN",
       "Type": "String"
@@ -139,14 +135,11 @@
           {"Ref": "InstanceSecurityGroup"}
         ],
         "InstanceType": {"Ref": "InstanceType"},
-        "AssociatePublicIpAddress": "False",
         "IamInstanceProfile": {"Ref": "InstanceProfile"},
         "UserData": {
           "Fn::Base64": {
             "Fn::Join": ["\n", [
-              { "Fn::Join": [ "", [ "curl https://github.com/", { "Ref": "GithubUsername" }, ".keys > /home/ubuntu/.ssh/authorized_keys" ] ] },
-              "chown ubuntu:ubuntu /home/ubuntu/.ssh/authorized_keys",
-              "chmod 400 /home/ubuntu/.ssh/authorized_keys",
+              "#!/bin/bash -ev",
 
               "apt-get -y update",
               "apt-get -y install nginx",
@@ -155,7 +148,8 @@
               { "Fn::Join": [ "", [ "curl ", { "Ref": "NginxConfigurationUrl" }, " > /etc/nginx/nginx.conf" ] ] },
 
               "service nginx start"
-            ]]
+            ]
+          ]
           }
         }
       }
