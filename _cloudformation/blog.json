@@ -154,7 +154,9 @@
 
               { "Fn::Join": [ "", [ "curl ", { "Ref": "NginxConfigurationUrl" }, " > /etc/nginx/nginx.conf" ] ] },
 
-              "service nginx start"
+              "service nginx start",
+
+              "apt-get install -y unattended-upgrades"
             ]
           ]
           }
