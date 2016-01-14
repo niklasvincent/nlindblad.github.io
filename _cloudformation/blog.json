@@ -156,7 +156,15 @@
 
               "service nginx start",
 
-              "apt-get install -y unattended-upgrades"
+              "apt-get install -y unattended-upgrades",
+
+              "apt-get install -y ufw",
+              "ufw enable",
+              "ufw default deny incoming",
+              "ufw default deny outgoing",
+              "ufw allow 80/tcp",
+              "ufw allow out 53,80,443/tcp",
+              "ufw allow out 53,67,68/udp"
             ]
           ]
           }
