@@ -148,6 +148,10 @@
             "Fn::Join": ["\n", [
               "#!/bin/bash -ev",
 
+              "gpg --keyserver keyserver.ubuntu.com --recv 7BD9BF62",
+              "gpg -a --export 7BD9BF62 | sudo apt-key add -",
+              "echo 'deb http://nginx.org/packages/mainline/ubuntu/ trusty nginx' | sudo tee -a /etc/apt/sources.list",
+              "echo 'deb-src http://nginx.org/packages/mainline/ubuntu/ trusty nginx' | sudo tee -a /etc/apt/sources.list",
               "apt-get -y update",
               "apt-get -y install nginx",
               "service nginx stop",
