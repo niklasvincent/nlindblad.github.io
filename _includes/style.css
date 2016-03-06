@@ -1,10 +1,12 @@
+/* Defaults */
 body {
   margin: 40px auto;
   max-width: 650px;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 1.2em;
   color: #444;
-  padding: 0 10px
+  padding: 0 10px;
+  font-family: 'Open Sans', sans-serif;
 }
 h1, h2, h3 {
   line-height:1.2
@@ -16,11 +18,47 @@ main img {
 }
 code {
   font-size: 16px;
-  white-space: pre-wrap;       /* CSS 3 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
-  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+a {
+  color: #57A3E8;
+  transition: color ease 0.2s;
+  text-decoration: none;
+}
+header .title__link {
+  color: #222;
+  text-decoration: none
+}
+
+/* Menu */
+.menu__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.menu__list__item {
+    float: left;
+}
+
+.menu__list__item__link {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+}
+/* Blog post */
+.post__title__link {
+  text-decoration: none;
+  color: #222;
+}
+.post__date {
+  color: #9EABB3;
 }
 
 /* Pygments syntax highlighting */
