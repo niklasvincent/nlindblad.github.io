@@ -1,7 +1,5 @@
-highlighter: pygments
+highlighter: rouge
 permalink: /:year/:month/:title
-rdiscount:
-  extensions: [smart]
 title : Niklas Lindblad
 canonical: https://niklaslindblad.se
 production_url : http://niklaslindblad.se
