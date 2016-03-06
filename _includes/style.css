@@ -7,6 +7,7 @@ body {
   color: #444;
   padding: 0 10px;
   font-family: 'Open Sans', sans-serif;
+  background: white;
 }
 h1, h2, h3 {
   line-height:1.2
@@ -40,7 +41,6 @@ header .title__link {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #fff;
 }
 
 .menu__list__item {
@@ -59,6 +59,10 @@ header .title__link {
 }
 .post__date {
   color: #9EABB3;
+}
+/* Timeline */
+.timeline__entry__date {
+  font-style: italic;
 }
 
 /* Pygments syntax highlighting */
