@@ -5,5 +5,5 @@ Personal website and blog
 
 ### Install Jekyll
 
-    sudo  pip install Pygments
-    sudo gem install pygments.rb rdiscount
+    sudo pip install Pygments
+    sudo gem install pygments.rb rdiscount jekyll
