@@ -2,14 +2,11 @@
 title: "Niklas Lindblad"
 layout: default
 ---
-
-<h1>Niklas Lindblad</h1>
-
 <ul itemscope itemtype="http://schema.org/Blog" class="post__list">
    {% for post in site.posts %}
    {% if post.language == 'english' %}
-    <li itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting" class="post__item">
-      <span class="post__date">{{ post.date | date: "%d %b  %Y" }}</span> <a class="post__link" href="{{ post.url }}">{{ post.title }}</a>
+    <li itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting" class="post__list__item">
+      <span class="post__list__date">{{ post.date | date: "%d %b  %Y" }}</span> <a class="post__list__link" href="{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endif %}
     {% endfor %}
