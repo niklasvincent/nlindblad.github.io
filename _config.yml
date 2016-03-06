@@ -1,4 +1,3 @@
-markdown: rdiscount
 highlighter: pygments
 permalink: /:year/:month/:title
 rdiscount:
