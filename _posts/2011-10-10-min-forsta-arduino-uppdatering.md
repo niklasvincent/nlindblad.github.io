@@ -13,11 +13,11 @@ tags:
 
 <p>Den här multimetern har jag haft i flera år och snarlika modeller finns på <a target="_blank" href="http://www.kjell.com/sortiment/48106">Kjell &amp; Company</a>.</p>
 
-<img src="{{ site.cloudfront_url }}/wordpress/wp-content/uploads/2011/10/IMG_0792-e1318159071581-224x300.jpg" />
+<img alt="Multimeter" src="{{ site.cloudfront_url }}/wordpress/wp-content/uploads/2011/10/IMG_0792-e1318159071581-224x300.jpg" />
 
 <p>Det är oumbärligt att kunna koppla kretsar utan att behöva löda. Den här plattan (kallas på engelska <i>breadboard</i>) är lite i minsta laget för lite större kretsar, men duger gott och väl nu i början. Plattan och bygelkablarna är nyinköpta från Kjell &amp; Company (<a target="_blank" href="http://www.kjell.com/sortiment/36251">kopplingsplattan, #36251</a> och <a target="_blank" href="http://www.kjell.com/sortiment/36254">bygelkablarna, #36254</a>).
-	
-<img src="{{ site.cloudfront_url }}/wordpress/wp-content/uploads/2011/10/IMG_0791-300x224.jpg" />
+
+<img alt="Breadboard" src="{{ site.cloudfront_url }}/wordpress/wp-content/uploads/2011/10/IMG_0791-300x224.jpg" />
 
 <p>Köpte även en hel del komponenter av olika slag:</p>
 
@@ -31,4 +31,4 @@ tags:
 
 <p>Det jag saknar just nu är ett gäng transistorer för att kunna bygga förstärkarkrestar till bland annat fotodioden, som ger en väldigt svag signal. Annars känns det som en bra början.</p>
 
-<img src="{{ site.cloudfront_url }}/wordpress/wp-content/uploads/2011/10/IMG_0794-300x224.jpg" />
+<img alt="Komponenter" src="{{ site.cloudfront_url }}/wordpress/wp-content/uploads/2011/10/IMG_0794-300x224.jpg" />
