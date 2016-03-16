@@ -13,4 +13,4 @@ author :
   twitter : nlindblad
   email: niklas@lindblad.info
   url: https://plus.google.com/u/1/+NiklasLindblad
-exclude:      ["Gruntfile.js", "README.md", "package.json", "node_modules"]
+exclude: [".travis.yml", "Gemfile", "Gemfile.lock", "vendor", "Rakefile", "README.md", "package.json", "node_modules"]

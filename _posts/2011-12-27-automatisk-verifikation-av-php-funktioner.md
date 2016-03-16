@@ -14,7 +14,7 @@ tags:
 
 ---
 
-I samband med att jag skrev recept till <a href="http://wiki.opscode.com/display/chef/Home" target="_blank">Chef</a> behövde jag ett sätt att kontrollera att nya PHP-moduler verkligen fungerar. Syftet med receptet var att installera Apache, PHP, MySQL och nödvändiga PHP-moduler som memcache och imagick.
+I samband med att jag skrev recept till <a href="https://docs.chef.io/chef_overview.html" target="_blank">Chef</a> behövde jag ett sätt att kontrollera att nya PHP-moduler verkligen fungerar. Syftet med receptet var att installera Apache, PHP, MySQL och nödvändiga PHP-moduler som memcache och imagick.
 
 För att underlätta verifikationen av PHP-modulerna tog jag fram följande funktion (Bash):
 
@@ -59,5 +59,3 @@ Testa om memcache fungerar korrekt. Ansluter till memcache och ger variabeln <i>
 <pre style='color:#000000;background:#ffffff; border: 1px solid #000; padding: 10px;'>verify_php <span style='color:#0000e6; '>'memcached'</span> <span style='color:#0000e6; '>'&lt;?php if ( ! function_exists("memcache_connect") ) { die(1); }<br /><br />$memcache_obj = memcache_connect("localhost", 11211);  <br /><br />memcache_set($memcache_obj, "var_key", "0"); die(memcache_get($memcache_obj, "var_key"));</span>
 <span style='color:#0000e6; '>?>'</span> <span style='color:#0000e6; '>'0'</span>
 </pre>
-
-

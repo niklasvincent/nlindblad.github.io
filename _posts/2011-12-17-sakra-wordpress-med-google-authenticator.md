@@ -13,7 +13,7 @@ tags:
 
 ---
 
-Förra året släppte Google en applikation till <a href="https://market.android.com/details?id=com.google.android.apps.authenticator&hl=sv" target="_blank">Android</a> och <a target="_blank" href="http://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8"/>iPhone</a> som gör det möjligt att köra <a target="_blank" href="http://support.google.com/accounts/bin/static.py?hl=sv&guide=1056283&page=guide.cs&answer=180744&rd=3">tvåstegsverifiering med ditt Google-konto</a>.
+Förra året släppte Google en applikation till <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en_GB" target="_blank">Android</a> och <a target="_blank" href="http://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8"/>iPhone</a> som gör det möjligt att köra <a target="_blank" href="http://support.google.com/accounts/bin/static.py?hl=sv&guide=1056283&page=guide.cs&answer=180744&rd=3">tvåstegsverifiering med ditt Google-konto</a>.
 
 I praktiken innebär det att även om ditt lösenord blir allmänt känt (till exempel om du av någon anledning använder samma lösenord på flera webbplatser och en utav dem blir hackad) behöver en oberhörig person även kunna mata in rätt engångskod vid inloggning.
 
@@ -26,12 +26,8 @@ Tack vare att Google inte har låst Google Authenticator till sina egna tjänste
 
 Majoriteten av WordPress-bloggar administreras helt okrypterat och det kan innebära att obehöriga personer kan få tillgång till hela din blogg/webbplats om du loggar in via till exempel ett osäkert trådlöst nätverk. Genom att lägga till tvåstegsverifiering löser du inte problemet med att inloggningsuppgifter skickas okrypterat, men du kan begränsa skadan detta orsakar.
 
-<a href="http://wordpress.org/extend/plugins/google-authenticator/" target="_blank">Wordpress-pluginet Google Authenticator</a> är enkelt att komma igång med och lägger till ett extra fält i WordPress inloggningsruta. 
+<a href="http://wordpress.org/extend/plugins/google-authenticator/" target="_blank">Wordpress-pluginet Google Authenticator</a> är enkelt att komma igång med och lägger till ett extra fält i WordPress inloggningsruta.
 
 
 
 För att lägga till din blogg i Google Authenticator-appen presenteras en QR-kod som du enkelt kan scanna.
-
-
-
-

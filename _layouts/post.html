@@ -2,9 +2,7 @@
 layout: default
 ---
 <article itemscope itemtype="http://schema.org/BlogPosting" class="post">
-  <h1 itemprop="headline" class="post__title">
-    <a class="post__title__link" href="{{ page.url }}">{{ page.title }}</a>
-  </h1>
+  <h1 itemprop="headline" class="post__title">{{ page.title }}</h1>
   <span class="post__date">{{ page.date | date: "%B %e, %Y" }}</span>
 
   <section itemprop="text">

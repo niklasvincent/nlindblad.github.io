@@ -54,7 +54,7 @@ the *master* branch is pushed to Linode, the files served by Apache are updated 
 The *Active-passive failover* offered by Route 53 suited my needs:
 
 	Use this failover configuration when you want a primary group of resources to be available the majority of the time and you want a secondary group of resources to be on standby in case all of the primary resources become unavailable. When responding to queries, Route 53 includes only the healthy primary resources. If all of the primary resources are unhealthy, Route 53 begins to include only the healthy secondary resources in response to DNS queries.
-	
+
 Everything is [outlined in the official Amazon Route 53 documentation](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-configuring.html) and in the case you just want failover to Amazon S3, there is a [detailed guide on the AWS blog](http://aws.typepad.com/aws/2013/02/create-a-backup-website-using-route-53-dns-failover-and-s3-website-hosting.html).
 
 I simply use the health check to check if it can retrieve an empty text file in the web root. If not, it will change the DNS record to point at the secondary server. The lowest possible TTL is 60 seconds, which means worst case clients will need a couple of minutes to pick up.
@@ -63,7 +63,7 @@ I simply use the health check to check if it can retrieve an empty text file in 
 
 Despite getting numerous alarms from services like Pingdom when my VPS goes offline, I wanted a visual clue on the blog itself that it is being served by the secondary server (the Raspberry Pi). If you see this, then this blog is not currently being served by Linode:
 
-<img src="{{ site.cloudfront_url }}/images/rpi-notice.png" style="border: 1px solid #000;" />
+<img alt="The notice" src="{{ site.cloudfront_url }}/images/rpi-notice.png" style="border: 1px solid #000;" />
 
 which seems like fair usage of the [Raspberry Pi](http://raspberrypi.org) logo
 
