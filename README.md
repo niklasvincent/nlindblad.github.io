@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/nlindblad/nlindblad.github.io.svg?branch=master)](https://travis-ci.org/nlindblad/nlindblad.github.io)
+
 # nlindblad.github.io
 Personal website and blog
 
@@ -5,4 +7,4 @@ Personal website and blog
 
 ### Install Jekyll
 
-    sudo gem install rouge jekyll
+    sudo gem install github-pages
