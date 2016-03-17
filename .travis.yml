@@ -1,5 +1,8 @@
 language: ruby
-cache: bundler
+cache:
+  - bundler
+  - directories:
+    - nginx-cache
 rvm:
 - 2.1
 script: bundle exec rake test
