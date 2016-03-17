@@ -4,17 +4,27 @@ layout: default
 ---
 
 <section class="content error">
-  <h1>404</h1>
+  <h2>Page not found</h2>
   <section class="error-text">
-    <p>
-      Sorry dude, I really didn't want to do this, but, well, you tried to
-      access a page that doesn't exists...
-    </p>
-    <p>
-      Ok, we still can be friends... I'll help you with this.. go to our
-      <a href="/">home</a>, and search what you want. Just that easy.
-    </p>
-    <p>Sorry again for the inconvenient!</p>
-    <p>I'll see you soon.</p>
+    <p>This is awkward, but the content you are looking for is not here.</p>
+    <p>You might want to try:</p>
+    <ul>
+      <li><a href="/">The home page</a></li>
+      <li><a href="/archive">Archive of all blog posts</a></li>
+      <li>The search box below to find what you are looking for</li>
+    </ul>
+    <script>
+      (function() {
+        var cx = '010549347825722879961:oush30mg2na';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+    <gcse:search></gcse:search>
   </section>
 </section>
