@@ -1,0 +1,42 @@
+---
+title: "This blog"
+layout: default
+---
+
+<h1 class="about-page__title">This blog</h1>
+
+  <p>The purpose of this page is to keep an up to date breakdown of how the blog is currently working. The format and infrastructure of this blog has changed a lot since it was originally launched back in 2011. Back then it was a simple Wordpress blog where I would write about freelance and hobby projects.</p>
+
+  <p>Today this blog lives on Github Pages (you can read the exact same content on <a target="_blank" href="https://nlindblad.github.io">the Github hosted version</a> and the source code is available on <a target="_blank" href="https://github.com/nlindblad/nlindblad.github.io">Github</a>).</p>
+
+  <p>Github Pages already provide a way of using your own domain, but I had already bought an SSL certificate that is valid until 2018, which I wanted to use in order to prove ownership of this domain. The solution was to point niklaslindblad.se to a web server configured to use the SSL certificate and then simply reverse proxy to nlindblad.github.io. For a while this was done on a <a href="https://www.digitalocean.com/" target="_blank">Digital Ocean</a> droplet.</p>
+
+  <p>Having worked at <a target="_blank" href="https://www.theguardian.com/info/developer-blog" target="_blank">The Guardian</a> for a year, where I have been migrating a lot of services to <a href="http://aws.amazon.com/" target="_blank">Amazon Web Services</a>, I wanted to build something more resilient that would be accessible even if the proxying web server went down.</p>
+
+  <h2>Blog Infrastructure</h2>
+
+  <img class="full" alt="Infrastrucure overview" src="{{ site.cloudfront_url }}/images/diagrams/blog-infrastructure-2016-002.png" />
+
+  <ol>
+    <li><b>ELB</b> - The DNS record for niklaslindblad.se points at an Elastic Load Balancer in AWS that performs SSL termination. The advantage of this is that the web servers do not need to have copies of the private key. Automatically deploying SSL keys was the pain of the previous setup and that was the main thing stopping me from automating things fully.</li>
+
+    <li><b>EC2</b> - The ELB is serving requests by proxying through to a set of EC2 servers that form an Autoscaling Group. The basic idea is that the number of servers can be increased/decreased depending on the latency experienced by visitors. Each EC2 instances runs the Nginx webserver using <a href="https://github.com/nlindblad/nlindblad.github.io/blob/master/_nginx/nginx.conf" target="_blank">this configuration</a>, turning them into reverse proxies that in turn makes requests to nlindblad.github.io and caches the response.</li>
+
+    <li><b>CloudFront</b> - All images are served from a separate domain with the AWS Content Delivery Network CloudFront. By hosting images on a separate domain from niklaslindblad.se, the browser can <a href="https://www.keycdn.com/blog/parallel-downloads-across-domains/" target="_blank">make those network calls in parallel</a> whilst loading content from the main site. It also means configuring caching headers becomes very easy. For everything served from CloudFront the browser is told to cache it for <em>10 years</em>. Being a CDN, CloudFront also caches a copy of each image closer to the visitor, reducing their download time.</li>
+
+    <li><b>S3</b> - The content served via CloudFront is stored in an S3 bucket. This is also where the cache headers are configured. CloudFront simply passes the cache headers through as it serves content out of S3.</li>
+  </ol>
+
+  <p>You can find the CloudFormation template for the ELB and EC2 part of the stack <a href="https://github.com/nlindblad/nlindblad.github.io/blob/master/_cloudformation/blog.json" target="_blank">here</a>.</p>
+
+  <h2>Continuous Delivery</h2>
+
+  <img class="full" alt="Continous Delivery pipeline" src="{{ site.cloudfront_url }}/images/diagrams/blog-ci-2016-003.png" />
+
+  <p>Using Github Pages for the content makes change management a breeze, it is all managed through Git. New content and changes to the layout can be done in feature branches. Before a branch gets merged into maser again, a set of tests are run on <a href="https://travis-ci.org/nlindblad/nlindblad.github.io" target="_blank">Travis CI</a>:</p>
+
+  <ol>
+    <li>Using the exact same setup Github Pages uses it runs Jekyll to build the blog and reports any errors.</li>
+    <li>Test whether the <a href="https://github.com/nlindblad/nlindblad.github.io/blob/master/_nginx/nginx.conf" target="_blank">the Nginx configuration</a> is valid by invoking a copy of the nginx binary.</li>
+    <li>Run <a href="https://github.com/gjtorikian/html-proofer" target="_blank">HTMLProofer</a> in order to make sure all images have alt attributes and that all links on the blog are valid.</li>
+  </ol>
