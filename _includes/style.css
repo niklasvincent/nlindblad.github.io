@@ -20,7 +20,7 @@ main img {
 .full {
   max-width: 100% !important;
 }
-main li {
+main ol li {
   padding-top: 1.5em;
 }
 code {
