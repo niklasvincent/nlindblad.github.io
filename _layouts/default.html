@@ -4,6 +4,7 @@ layout: compress
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <title>
@@ -14,7 +15,7 @@ layout: compress
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href='/feed.xml' rel='alternate' type='application/atom+xml'>
     <link rel="author" href="{{ site.author.url }}" />
-    <link href="{{ site.canonical }}" rel="canonical">
+    <link rel="canonical" href="{{ site.canonical }}{{ site.url }}{{ page.url | replace:'index.html',''}}">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <style type="text/css">{% include style.css %}</style>
   </head>
