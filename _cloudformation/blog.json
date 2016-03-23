@@ -33,10 +33,15 @@
       ],
       "ConstraintDescription": "must be a valid EC2 instance type."
     },
+    "DesiredInstances" : {
+      "Description": "Desired number of instances.",
+      "Type": "Number",
+      "Default": 1
+    },
     "MaxInstances" : {
       "Description": "Maximum number of instances. This should be (at least) double the desired capacity.",
       "Type": "Number",
-      "Default": 1
+      "Default": 5
     },
     "MinInstances" : {
       "Description": "Minimum number of instances",
@@ -115,6 +120,7 @@
       "Properties": {
         "AvailabilityZones": { "Fn::GetAZs": "" },
         "LaunchConfigurationName": { "Ref": "LaunchConfig" },
+        "DesiredCapacity": {"Ref": "DesiredInstances"},
         "MinSize": {"Ref": "MinInstances"},
         "MaxSize": {"Ref": "MaxInstances"},
         "HealthCheckType": "ELB",
