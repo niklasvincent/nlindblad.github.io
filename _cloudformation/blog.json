@@ -13,7 +13,7 @@
     "AmiId": {
       "Description": "Custom AMI to use for instances, created using Packer",
       "Type": "String",
-      "Default": "ami-3922944a"
+      "Default": "ami-fb388e88"
     },
     "VpcId": {
       "Description": "ID of the VPC onto which to launch the application",
