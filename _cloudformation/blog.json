@@ -123,6 +123,7 @@
         "DesiredCapacity": {"Ref": "DesiredInstances"},
         "MinSize": {"Ref": "MinInstances"},
         "MaxSize": {"Ref": "MaxInstances"},
+        "TerminationPolicies": [ "OldestInstance" ],
         "HealthCheckType": "ELB",
         "HealthCheckGracePeriod": 400,
         "LoadBalancerNames": [ {"Ref": "LoadBalancer"} ],
@@ -159,9 +160,9 @@
               "echo 'deb http://nginx.org/packages/mainline/ubuntu/ trusty nginx' | sudo tee -a /etc/apt/sources.list",
               "echo 'deb-src http://nginx.org/packages/mainline/ubuntu/ trusty nginx' | sudo tee -a /etc/apt/sources.list",
               "apt-get -y update",
-              
+
               "apt-get -y upgrade",
-              
+
               "apt-get -y install nginx",
               "service nginx stop",
 
