@@ -20,6 +20,9 @@ main img {
 .full {
   max-width: 100% !important;
 }
+.inline {
+  display: inline;
+}
 main ol li {
   padding-top: 1.5em;
 }
@@ -40,7 +43,11 @@ header .title__link {
   color: #222;
   text-decoration: none
 }
-
+.license {
+  font-size: 0.7em;
+  margin-top: 15px;
+  padding-top: 15px;
+}
 /* Menu */
 .menu__list {
     list-style-type: none;
