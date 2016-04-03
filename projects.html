@@ -8,7 +8,9 @@ layout: default
 {% if site.github.public_repositories %}
   {% assign sorted_repositories = site.github.public_repositories | sort: 'watchers_count' %}
   {% for repository in sorted_repositories reversed %}
+    {% if repository.fork == false %}
     <h2><a href="{{ repository.html_url }}" target="_blank">{{ repository.name }}</a></h2>
     <p>{{ repository.description }}</p>
+    {% endif %}
   {% endfor %}
 {% endif %}
