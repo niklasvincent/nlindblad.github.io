@@ -19,4 +19,4 @@ Resultatet är en applikation som kontinuerligt hämtar bilder med en viss hasht
 
 Deltagarna på evenemanget behöver bara tagga bilderna de tar med Instagram och sedan hämta dem i fotobåset. Glöm engångskameror! I efterhand får du som arrangör en unik inblick i hur evenemanget såg ut genom besökarnas ögon, samt möjlighet att bygga fotoalbum både i pappersformat och digitalt.
 
-<a href="http://instagram.com/" target="_blank">Instagram</a> har i dagsläget 27 miljoner användare och släppte precis <a href="http://blog.instagram.com/post/20411305253/instagram-for-android-available-now?1c486b80" target="_blank">en version till Android</a>.
+<a href="http://instagram.com/" target="_blank">Instagram</a> har i dagsläget 27 miljoner användare och släppte precis en version till Android.
