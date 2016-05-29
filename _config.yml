@@ -3,7 +3,7 @@ permalink: /:year/:month/:title
 title : Niklas Lindblad
 canonical: https://niklaslindblad.se
 production_url : http://niklaslindblad.se
-cloudfront_url : https://d2tjdh98vh6jzp.cloudfront.net
+cloudfront_url : https://cdn.niklaslindblad.se
 description: "Personal website for Niklas Lindblad, experienced software developer and MSc Nanoscience Engineering"
 disqus_shortname: nikaslindbladblog
 analytics: UA-25940343-1

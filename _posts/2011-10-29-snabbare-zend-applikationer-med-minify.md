@@ -40,7 +40,7 @@ För en webbapplikation i produktionsmiljö rekommenderas en cache-tid på en ve
 
 <h2>Minify i Zend Framework</h2>
 
-För att få ett bättre arbetsflöde med Minify i Zend finns det två hjälpskript som placeras i 
+För att få ett bättre arbetsflöde med Minify i Zend finns det två hjälpskript som placeras i
 
 <pre style='color:#000000;background:#ffffff;'>application<span style='color:#808030; '>/</span>views<span style='color:#808030; '>/</span>helpers<span style='color:#808030; '>/</span>
 </pre>
@@ -103,8 +103,6 @@ Glöm inte att kommentera ut:
 
 Efter att ha installerat Minify och gått igenom alla steg ovan:
 
-<a href="{{ site.cloudfront_url }}/wordpress/wp-content/uploads/2011/10/Skarmavbild-2011-10-29-kl.-17.11.31.png"><img src="https://d2tjdh98vh6jzp.cloudfront.net/wordpress/wp-content/uploads/2011/10/Skarmavbild-2011-10-29-kl.-17.11.31-300x106.png" alt="Pingdom-mätning" title="Pingdom-mätning" width="300" height="106" class="aligncenter size-medium wp-image-203" /></a>
+<a href="{{ site.cloudfront_url }}/wordpress/wp-content/uploads/2011/10/Skarmavbild-2011-10-29-kl.-17.11.31.png"><img src="{{ site.cloudfront_url }}/wordpress/wp-content/uploads/2011/10/Skarmavbild-2011-10-29-kl.-17.11.31-300x106.png" alt="Pingdom-mätning" title="Pingdom-mätning" width="300" height="106" class="aligncenter size-medium wp-image-203" /></a>
 
 Anledningen till att prestanda-betyget inte blir 100/100 är att Minify använder GET-variabler (till exempel /min/?f=), vilket gör att vissa proxy-servrar inte kommer cacha förfrågan.
-
-
