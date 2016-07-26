@@ -1,0 +1,7 @@
+    map $http_x_forwarded_proto $csp {
+      'https'  "default-src 'none'; script-src 'unsafe-inline' {{content_security_policy.script_src}}; object-src 'none'; style-src 'unsafe-inline' {{content_security_policy.style_src}}; img-src data: {{content_security_policy.img_src}}; media-src 'none'; frame-src 'none'; font-src 'none'; connect-src 'none'; upgrade-insecure-requests; block-all-mixed-content; reflected-xss block; base-uri https://{{domain}}; referrer no-referrer-when-downgrade;";
+      'http' "";
+    }
+    add_header                Content-Security-Policy $csp;
+    add_header                X-Content-Security-Policy $csp;
+    add_header                X-WebKit-CSP $csp;

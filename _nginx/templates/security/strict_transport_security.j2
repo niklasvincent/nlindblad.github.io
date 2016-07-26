@@ -1,0 +1,5 @@
+    map $http_x_forwarded_proto $sts {
+      'https' "max-age={{strict_transport_security.max_age}}; includeSubdomains; preload;";
+      'http' "";
+    }
+    add_header Strict-Transport-Security $sts;
