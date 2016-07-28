@@ -25,7 +25,10 @@ def main(template_filename, config_filename, output_filename):
 
 
 if __name__ == '__main__':
-    current_directory=os.path.dirname(os.path.realpath(__file__))
+    current_directory = os.path.dirname(os.path.realpath(__file__))
+    output_directory = os.path.join(current_directory, 'output')
+    if not os.path.exists(output_directory):
+        os.makedirs(output_directory)
     main(
         template_filename=os.path.join(
             current_directory,
@@ -36,8 +39,9 @@ if __name__ == '__main__':
             '..',
             '_config.yml'
         ]),
-        output_filename=os.path.join(
+        output_filename=os.path.join(*[
             current_directory,
+            'output',
             'nginx.conf'
-        )
+        ])
     )
