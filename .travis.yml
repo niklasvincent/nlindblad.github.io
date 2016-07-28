@@ -16,6 +16,7 @@ deploy:
   region: eu-west-1
   local_dir: _nginx/output
   skip_cleanup: true
+  acl: public_read
   secret_access_key:
     secure: X3yTqoqymOy1QZlPW0K3hdEWQI6AWoFec3B5UJTh144yAL7/vEQvtWbYJJKOWYu+2BJ9WDNZE0Lm/uIL2NkfaKpnwDfc2srpao+dP+aOiBCVAyBzBkbtcgLWTmG9WoWxX7qWX0l/e5BjVH6sOBZ7tVw2u6U81rhR0h8cgLWsa6E=
   access_key_id:
