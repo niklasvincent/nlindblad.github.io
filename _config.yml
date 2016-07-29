@@ -51,3 +51,11 @@ public_key_pinning:
         - NguuvB5WoODUZEl9eI35tPVrsvqNff0iK2BqLI/cd0A=
         - dS7lkSs8Ft7kDjlx49qoiCd+KmZO5dczUy9b3SZxUK8=
         - CjM6HMDUvUtK0w25dTW/t39bDs0aK8hOHOAsnq2DHMU=
+        # Amazon Root CA 1
+        - ++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI=
+        # Amazon Root CA 2
+        - f0KW/FtqTjs108NpYj42SrGvOB2PpxIVM8nWxjPqJGE=
+        # Amazon Root CA 3
+        - NqvDJlas/GRcYbcWE8S/IceH9cq77kg0jVhZeAPXq8k=
+        # Amazon Root CA 4
+        - 9+ze1cZgR9KO1kZrVDxA4HQ6voHRCSVNz4RdTCx4U8U=
