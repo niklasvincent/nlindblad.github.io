@@ -59,3 +59,11 @@ public_key_pinning:
         - NqvDJlas/GRcYbcWE8S/IceH9cq77kg0jVhZeAPXq8k=
         # Amazon Root CA 4
         - 9+ze1cZgR9KO1kZrVDxA4HQ6voHRCSVNz4RdTCx4U8U=
+        # lets-encrypt-x1-cross-signed.pem
+        - f9zjv0EDwmhLOtu1eSiEvUXHUJTCF3iIY5UDRveckKM=
+        # lets-encrypt-x2-cross-signed.pem
+        - 7AxspJamehM0L+xSIfaNSz5Tsbwi9uS8zJxo8EFc3qQ=
+        # lets-encrypt-x3-cross-signed.pem
+        - JYR9Zo608E/dQLErawdAxWfafQJDCOtsLJb+QdneIY0=
+        # lets-encrypt-x4-cross-signed.pem
+        - p0sMMrZblf4sT48JiUemi2lQM77QtR3YuYTsrolXG7Y=
