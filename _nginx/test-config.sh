@@ -9,7 +9,7 @@ if [[ ! -f ${NGINX_CACHE_DIR}/nginx ]]; then
   wget https://s3-eu-west-1.amazonaws.com/deploy-niklaslindblad-se/nginx/x86_64/nginx -O ${NGINX_CACHE_DIR}/nginx
 fi
 chmod +x ${NGINX_CACHE_DIR}/nginx
-${NGINX_CACHE_DIR}/nginx -c ${DIR}/output/nginx.conf 2>${NGINX_CONFIG_LOG}
+${NGINX_CACHE_DIR}/nginx -t -c ${DIR}/output/nginx.conf 2>${NGINX_CONFIG_LOG}
 
 if [[ $(cat $NGINX_CONFIG_LOG | egrep "syntax is ok" | wc -l) -eq 1 ]]; then
   echo "Nginx configuration OK!"
