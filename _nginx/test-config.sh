@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 NGINX_CONFIG_LOG="/tmp/nginx-config-check.log"
 NGINX_CACHE_DIR="${DIR}/../nginx-cache"
