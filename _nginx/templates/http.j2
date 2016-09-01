@@ -4,8 +4,6 @@
     client_max_body_size      1k;
     large_client_header_buffers 2 1k;
     ## END: Size Limits & Buffer Overflows ##
-    limit_conn_zone           $binary_remote_addr zone=conn_limit_per_ip:10m;
-    limit_req_zone            $binary_remote_addr zone=req_limit_per_ip:10m rate=5r/s;
     server_tokens             off;
     sendfile                  on;
     tcp_nopush                on;
