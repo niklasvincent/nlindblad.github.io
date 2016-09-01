@@ -16,6 +16,6 @@ if [[ $(cat $NGINX_CONFIG_LOG | egrep "syntax is ok" | wc -l) -eq 1 ]]; then
   exit 0
 else
   echo -e "Nginx configuration invalid:\n"
-  cat ${NGINX_CONFIG_LOG} | egrep -v "directive makes sense only if the master process runs with super-user privileges" | egrep -v "could not open error log file"
+  cat ${NGINX_CONFIG_LOG}
   exit 1
 fi
