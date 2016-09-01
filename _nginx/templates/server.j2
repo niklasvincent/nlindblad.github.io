@@ -2,8 +2,6 @@
       listen                      80;
       server_name                 {{domain}};
       root                        /var/www;
-      limit_conn                  conn_limit_per_ip 10;
-      limit_req                   zone=req_limit_per_ip burst=10 nodelay;
       proxy_cache                 one;
 
       if ($http_x_forwarded_proto = "http") {
@@ -49,6 +47,4 @@
         listen                    80;
         server_name               www.{{domain}};
         return 301                https://{{domain}}$request_uri;
-        limit_conn                conn_limit_per_ip 10;
-        limit_req                 zone=req_limit_per_ip burst=10 nodelay;
     }
