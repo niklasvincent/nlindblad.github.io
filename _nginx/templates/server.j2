@@ -10,6 +10,11 @@
         return 301 https://{{domain}}$request_uri;
       }
 
+      # Allow access to the ACME Challenge for Let’s Encrypt
+      location ~ /\.well-known\/acme-challenge {
+        allow all;
+      }
+
       rewrite ^/(.*)/$ /$1 permanent;
 
       location / {
