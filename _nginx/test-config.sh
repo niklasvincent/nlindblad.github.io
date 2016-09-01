@@ -6,7 +6,7 @@ NGINX_CACHE_DIR="${DIR}/../nginx-cache"
 mkdir -p ${NGINX_CACHE_DIR}
 
 if [[ ! -f ${NGINX_CACHE_DIR}/nginx ]]; then
-  wget https://s3-eu-west-1.amazonaws.com/deploy.niklaslindblad.se/x86_64/nginx -O ${NGINX_CACHE_DIR}/nginx
+  wget https://s3-eu-west-1.amazonaws.com/deploy-niklaslindblad-se/nginx/x86_64/nginx -O ${NGINX_CACHE_DIR}/nginx
 fi
 chmod +x ${NGINX_CACHE_DIR}/nginx
 ${NGINX_CACHE_DIR}/nginx -T -c ${DIR}/output/nginx.conf 2>${NGINX_CONFIG_LOG}
