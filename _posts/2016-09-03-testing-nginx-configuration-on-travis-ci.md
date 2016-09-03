@@ -13,8 +13,6 @@ I've been using Travis for the past year in order to assure that any configurati
 
 A critical step is making sure that the nginx configuration is valid before deploying it to AWS S3 where it later gets downloaded by the server(s).
 
-### Running the tests on Travis CI
-
 **TL;DR** Check out this [finished example on Github](https://github.com/nlindblad/travis-test-nginx-config)
 
 The containers performing the build on Travis [use Ubuntu 14.04 Trusty Tahr](https://docs.travis-ci.com/user/ci-environment/#Virtualization-environments). Using the official nginx package index for Ubuntu, I found a suitable nginx 1.10.0 package that was compiled against the same libraries as the somewhat outdated stock nginx ([1.4.6](http://packages.ubuntu.com/trusty/nginx-light)).
