@@ -1,6 +1,7 @@
 #!/bin/bash -x
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+NGINX_CONFIG="${DIR}/output/nginx.conf"
 NGINX_CONFIG_LOG="/tmp/nginx-config-check.log"
 NGINX_CACHE_DIR="${DIR}/../nginx-cache"
 NGINX_BINARY="${NGINX_CACHE_DIR}/nginx"
@@ -21,7 +22,7 @@ if [[ ! -f "${NGINX_BINARY}" ]]; then
 fi
 
 chmod +x ${NGINX_CACHE_DIR}/nginx
-${NGINX_CACHE_DIR}/nginx -t -c ${DIR}/nginx.conf 2>${NGINX_CONFIG_LOG}
+${NGINX_CACHE_DIR}/nginx -t -c "${NGINX_CONFIG}" 2>${NGINX_CONFIG_LOG}
 
 if [[ $(cat $NGINX_CONFIG_LOG | egrep "syntax is ok" | wc -l) -eq 1 ]]; then
   echo "Nginx configuration OK!"
