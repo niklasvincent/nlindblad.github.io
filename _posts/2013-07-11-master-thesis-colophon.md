@@ -29,7 +29,7 @@ After including *version.tex* in the header, the result looked like this:
 <img alt="Git revision in LaTex" src="{{ site.cloudfront_url }}/images/git-revision-latex.png" style="border: 1px solid black;" />
 
 ## LaTeX for Typesetting ##
-I used a LaTeX template I have had laying around since freshman year for lab reports. Most universities provide their own templates and it turns out I should probably have gone with [the standard one by the faculty](http://www.eit.lth.se/fileadmin/eit/group/56/Exjobbreport_01.tex).
+I used a LaTeX template I have had laying around since freshman year for lab reports. Most universities provide their own templates and it turns out I should probably have gone with the standard one by the faculty.
 
 Using the hyperref package and some nice options from the xcolor package, the final PDF had clickable hyper references for things like citations and definitions:
 
