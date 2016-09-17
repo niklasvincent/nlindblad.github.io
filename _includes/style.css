@@ -81,6 +81,18 @@ header .title__link {
   font-style: italic;
 }
 
+/* About */
+table .social-profile {
+  padding: 5px;
+}
+.social-profile th {
+  text-align: left;
+}
+
+.social-profile td {
+  padding-left: 5px;
+}
+
 /* Pygments syntax highlighting */
 code .hll { background-color: #ffffcc }
 code .c { color: #60a0b0; font-style: italic }
