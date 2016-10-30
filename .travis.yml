@@ -10,14 +10,3 @@ sudo: false
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-deploy:
-  provider: s3
-  bucket: "niklas-lindblad-se-deploy"
-  region: eu-west-1
-  local_dir: _nginx/output
-  skip_cleanup: true
-  acl: public_read
-  secret_access_key:
-    secure: X3yTqoqymOy1QZlPW0K3hdEWQI6AWoFec3B5UJTh144yAL7/vEQvtWbYJJKOWYu+2BJ9WDNZE0Lm/uIL2NkfaKpnwDfc2srpao+dP+aOiBCVAyBzBkbtcgLWTmG9WoWxX7qWX0l/e5BjVH6sOBZ7tVw2u6U81rhR0h8cgLWsa6E=
-  access_key_id:
-    secure: Lzg2Fta4o/clLbD970nw5HQg0YwAywGh2pyQGmQ7bobmyT6FEnpaM6oS0clGc7Gg5oIyR0fE4u9toVET66hZZ/JoZ2z2huLKj0j3n07oMAFeuBvumdmXyktobId5IQo+SvczgNBZ1dEJgYJNV9BueyfjQMR/xH1waR5NJ41IdFA=
