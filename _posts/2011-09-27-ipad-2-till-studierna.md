@@ -12,8 +12,6 @@ tags:
 
 <p>Lösningen just nu, som jag är väldigt nöjd med, heter <a href="http://itunes.apple.com/app/pdf-expert-fill-forms-annotate/id393316844?mt=8">PDF Expert</a>. Förutom att organisera PDF-dokument i olika mappar och annotera (se bilden nedan) kan man överföra dokument direkt från andra datorer via MobileMe, Dropbox, Google Docs eller SSH/FTP. Dessutom kan PDF-dokument från webbplatser i Safari direkt importeras.</p>
 
-<img src="http://a4.mzstatic.com/us/r1000/117/Purple/57/ea/20/mzl.fjkaxejf.480x480-75.jpg" alt="PDF Expert" />
-
 <p>Tyvärr känns det som att det kommer dröja länge innan läsplattor ersätter den fysiska boken. Jag övervägde att testa Kindle för kursböckerna, men insåg snabbt att de flesta förlag som ger ut kurslitteratur för tekniska studier på universitetsnivå oftast trycker upp små upplagor och att digital distribution inte är ett alternativ i dagsläget.</p>
 
 <p>I USA har det hänt en del och <a href="http://www.coursesmart.com/">CourseSmart</a> erbjuder digital kurslitteratur och har bland annat jätteförlaget Pearson med sig. Dessutom gör de de väldigt kagixa påståendet:</p>
