@@ -1,5 +1,0 @@
-    map $http_x_forwarded_proto $hpkp {
-      'https' '{% for pin_sha256 in public_key_pinning.pin_sha256s %}pin-sha256="{{pin_sha256}}";{% endfor %}max-age={{public_key_pinning.max_age}}';
-      'http' '';
-    }
-    add_header Public-Key-Pins $hpkp;

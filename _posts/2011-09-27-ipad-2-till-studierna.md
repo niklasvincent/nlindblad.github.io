@@ -22,9 +22,7 @@ tags:
 
 <p>Dessvärre har de inte många titlar inom teknik. Boken <i>Electronic Communication Techniques</i> (ISBN 9780131228856) som jag använder i kursen Radio är utgiven av Pearson Education. Det borde rimligtvis innebära att den hade kunnat finnas digitalt på CourseSmart eftersom Pearson är en av partnerförlagen.</p>
 
-<p>CourseSmart har även tagit fram en <a href="http://itunes.apple.com/us/app/etextbooks-for-the-ipad/id364903557?mt=8">egen iPad-app</a> för att läsa e-böcker från dem:</p>
-
-<img src="http://a1.mzstatic.com/us/r1000/097/Purple/6a/8c/57/mzl.fkrtrbvx.480x480-75.jpg" alt="eTextbooks for the iPad" />
+<p>CourseSmart har även tagit fram en <a href="http://itunes.apple.com/us/app/etextbooks-for-the-ipad/id364903557?mt=8">egen iPad-app</a> för att läsa e-böcker från dem.</p>
 
 <p>En av de mindre positiva kommentarerna appen har fått i App Store är:</p>
 
