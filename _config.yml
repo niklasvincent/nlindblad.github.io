@@ -14,6 +14,7 @@ author :
   email: niklas@lindblad.info
   url: https://plus.google.com/u/1/+NiklasLindblad
 exclude: ["_nginx", ".travis.yml", "Gemfile", "Gemfile.lock", "vendor", "Rakefile", "README.md", "package.json", "node_modules"]
+include: [".well-known"]
 repository: nlindblad/nlindblad.github.io
 gems: ['jekyll-github-metadata']
 domain: niklaslindblad.se
