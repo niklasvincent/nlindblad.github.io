@@ -93,6 +93,15 @@ table .social-profile {
   padding-left: 5px;
 }
 
+/* Blog listing */
+.post__list {
+    list-style: square;
+}
+.post__list__date {
+    font-family: monospace;
+    margin-right: 5px;
+}
+
 /* Pygments syntax highlighting */
 code .hll { background-color: #ffffcc }
 code .c { color: #60a0b0; font-style: italic }
