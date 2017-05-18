@@ -8,7 +8,7 @@ tags:
 
 ---
 
-Häromdagen köpte jag ett SSL-certifikat till den här bloggen. Tillvägagångssättet att installera SSL-certifikat beskrivs ofta väldigt utförligt av företaget som du köper SSL-certifikatet ifrån. För Apache, som de allra flesta webbplatser körs på, är det inga problem att hitta bra guider. Ett exempel på en bra guide är <a href="http://help.godaddy.com/article/5238" target="_blank">denna från GoDaddy</a>.
+Häromdagen köpte jag ett SSL-certifikat till den här bloggen. Tillvägagångssättet att installera SSL-certifikat beskrivs ofta väldigt utförligt av företaget som du köper SSL-certifikatet ifrån. För Apache, som de allra flesta webbplatser körs på, är det inga problem att hitta bra guider. Ett exempel på en bra guide är <a href="https://uk.godaddy.com/help/install-ssl-certificates-16623" target="_blank">denna från GoDaddy</a>.
 
 <h2>Ändra i .htaccess</h2>
 För att Apache (webbservern) ska hänvisa besökare till att använda en krypterad anslutning kan man lägga till följande direktiv i <i>.htaccess</i>:
@@ -38,12 +38,6 @@ Trots de rigorösa inställningarna ovan kan det ändå bli fel ibland när bes�
 <h2>Olika beteenden i olika webbläsare</h2>
 Google Chrome kommer att visa olika ikoner i adressfältet beroende på om sidan laddar innehåll (bilder, iframe, etc.) från källor som inte använder HTTPS.
 
-
-
-
-
 I det sista fallet är det ett blogginlägg som inkluderar <a href="http://www.scribd.com/doc/2569355/Geo-Distance-Search-with-MySQL" target="_blank">en presentation från Scribd</a>. Deras lösning för inbäddning (precis som många andra sidor) bygger på iframe och källan är oftast inte krypterad.
 
 <b>Se till att allt innehåll på själva bloggen inte har <i>http://</i> i länkarna utan <i>https://</i>. Som standard använder Wordpress hela URL:en när bilder läggs till från mediagalleriet. Gamla inlägg kommer därför ha bildlänkar som inte är HTTPS.</b>
-
-
