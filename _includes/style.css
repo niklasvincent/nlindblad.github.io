@@ -155,3 +155,13 @@ code .ss { color: #517918 }
 code .bp { color: #007020 }
 code .vc, code .vg, code .vi { color: #bb60d5 }
 code .il { color: #40a070 }
+
+/* Reading */
+.book__pages {
+    color: #9c9c9c;
+    font-size: 0.7em;
+}
+
+.books__table tr td {
+    padding: 10px;
+}
