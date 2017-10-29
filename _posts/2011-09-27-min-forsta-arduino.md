@@ -7,7 +7,7 @@ tags:
 
 ---
 
-<p>Hämtade precis min första (men förhoppningsvis inte sista) Arduino på posten och funderar på vad jag ska bygga. Har en DS18S20 (<a target="_blank" href="http://www.maxim-ic.com/datasheet/index.mvp/id/2815">datablad</a>) temperatursensor liggandes hemma. Inte världens intressantaste projekt, men det är en början.</p>
+<p>Hämtade precis min första (men förhoppningsvis inte sista) Arduino på posten och funderar på vad jag ska bygga. Har en DS18S20 (<a target="_blank" href="https://datasheets.maximintegrated.com/en/ds/DS18S20.pdf">datablad</a>) temperatursensor liggandes hemma. Inte världens intressantaste projekt, men det är en början.</p>
 
 <p>Mer uppdateringar när jag har hunnit bygga något. En webbserver som visar temperaturen på en statisk HTML-sida kanske?</p>
 
