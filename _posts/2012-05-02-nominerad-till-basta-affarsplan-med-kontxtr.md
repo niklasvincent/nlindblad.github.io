@@ -11,4 +11,4 @@ tags:
 
 ---
 
-Idag blev det officiellt att jag tillsammans med <a href="http://twitter.com/mossisen" target="_blank">Nicklas Nygren</a> har gått till regionfinal med vår affärsplan för tjänsten <a href="https://kontxtr.com" target="_blank">Kontxtr</a>.
+Idag blev det officiellt att jag tillsammans med <a href="http://mossisen.se/" target="_blank">Nicklas Nygren</a> har gått till regionfinal med vår affärsplan för tjänsten <a href="https://kontxtr.com" target="_blank">Kontxtr</a>.

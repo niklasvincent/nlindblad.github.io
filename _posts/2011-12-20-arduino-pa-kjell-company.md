@@ -10,7 +10,7 @@ tags:
 
 ---
 
-I samband med lite efterforskningar för att hjälpa <a target="_blank" href="http://twitter.com/mossisen">Nicklas Nygren (@mossisen)</a> hitta en Arduino till ett projekt märkte jag att <a target="_blank" href="http://kjell.com">Kjell & Company</a> har 1) fräschat upp sin hemsida och 2) numera har Arduino i lager.
+I samband med lite efterforskningar för att hjälpa <a target="_blank" href="http://mossisen.se">Nicklas Nygren (@mossisen)</a> hitta en Arduino till ett projekt märkte jag att <a target="_blank" href="http://kjell.com">Kjell & Company</a> har 1) fräschat upp sin hemsida och 2) numera har Arduino i lager.
 
 
 
