@@ -23,13 +23,10 @@ får du tillbaka alla händelser i Studentlunds kalendarie som pågår just nu, 
 Fredagen den 3 december 2011 klockan 22:01 (2011-12-03 22:01):
 
 <h3>Jag bor på Delphi (55.721756, 13.218038)</h3>
-<img alt="Karta kring Delphi" src="https://maps.googleapis.com/maps/api/staticmap?center=55.721756,13.218038&zoom=11&size=200x200&sensor=false&markers=55.72175,13.218038" />
 
 <h3>Jag bor på Västgöta Nation (55.705494, 13.210160)</h3>
-<img alt="Karta kring Västgöta Nation" src="https://maps.googleapis.com/maps/api/staticmap?center=55.705494,13.210160&zoom=11&size=200x200&sensor=false&markers=55.705494,13.210160" />
 
 <h3>Jag bor på Vildanden (55.710293, 13.169930)</h3>
-<img alt="Karta kring Vildanden" src="https://maps.googleapis.com/maps/api/staticmap?center=55.710293,13.169930&zoom=11&size=200x200&sensor=false&markers=55.710293,13.169930" />
 
 <h2>Testkod i PHP</h2>
 <pre style='color:#000000;background:#ffffff;'><span style='color:#5f5035; background:#ffffe8; '>&lt;?php</span><span style='color:#000000; background:#ffffe8; '></span>
