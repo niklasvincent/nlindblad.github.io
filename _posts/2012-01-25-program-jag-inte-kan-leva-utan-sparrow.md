@@ -20,6 +20,6 @@ Nytt i senaste versionen är att bilagor kan skickas som både traditionella bil
 
 
 
-Äkta Mac-nördar uppskattar säkert <a href="http://vimeo.com/32852176" target="_blank">Sparrows nya reklamfilm</a>. Riktigt snyggt genomfört. Jag gillar användningen av Time Machine. Supernördigt och snyggt.
+Äkta Mac-nördar uppskattar säkert <a href="https://vimeo.com/32852176" target="_blank">Sparrows nya reklamfilm</a>. Riktigt snyggt genomfört. Jag gillar användningen av Time Machine. Supernördigt och snyggt.
 
 
