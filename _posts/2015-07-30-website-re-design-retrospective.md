@@ -58,7 +58,7 @@ Here is a Gist for the Liquid template code required to achieve this:
 
 ## Timeline on the about page
 
-As my career has progressed, I decided to make a [visual timeline](/about.html#timeline) (based on [this example](https://codepen.io/P233/pen/lGewF)) instead of writing everything out in paragraphs.
+As my career has progressed, I decided to make a [visual timeline](/about.html#timeline) (based on <a href="https://codepen.io/P233/pen/lGewF" data-proofer-ignore>this example</a>) instead of writing everything out in paragraphs.
 
 ## Future changes
 
