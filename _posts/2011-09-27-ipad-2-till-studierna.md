@@ -10,9 +10,7 @@ tags:
 
 <p>För några veckor sedan köpte jag en iPad 2 för att slippa skriva ut föreläsningsmaterial och laborationsmanualer. Just den här perioden läser jag kurser där föreläsarna publicerar allt material på respektive kurshemsida i PDF-format. Dessutom har det vid flera tillfällen hänt att laborationsmanualer har blivit reviderade dagen innan laborationstillfället, vilket är väldigt irriterande om man har skrivit ut 30 sidor dagen innan.</p>
 
-<p>Lösningen just nu, som jag är väldigt nöjd med, heter <a href="http://itunes.apple.com/app/pdf-expert-fill-forms-annotate/id393316844?mt=8">PDF Expert</a>. Förutom att organisera PDF-dokument i olika mappar och annotera (se bilden nedan) kan man överföra dokument direkt från andra datorer via MobileMe, Dropbox, Google Docs eller SSH/FTP. Dessutom kan PDF-dokument från webbplatser i Safari direkt importeras.</p>
-
-<img src="http://a4.mzstatic.com/us/r1000/117/Purple/57/ea/20/mzl.fjkaxejf.480x480-75.jpg" alt="PDF Expert" />
+<p>Lösningen just nu, som jag är väldigt nöjd med, heter PDF Expert. Förutom att organisera PDF-dokument i olika mappar och annotera (se bilden nedan) kan man överföra dokument direkt från andra datorer via MobileMe, Dropbox, Google Docs eller SSH/FTP. Dessutom kan PDF-dokument från webbplatser i Safari direkt importeras.</p>
 
 <p>Tyvärr känns det som att det kommer dröja länge innan läsplattor ersätter den fysiska boken. Jag övervägde att testa Kindle för kursböckerna, men insåg snabbt att de flesta förlag som ger ut kurslitteratur för tekniska studier på universitetsnivå oftast trycker upp små upplagor och att digital distribution inte är ett alternativ i dagsläget.</p>
 
@@ -22,9 +20,7 @@ tags:
 
 <p>Dessvärre har de inte många titlar inom teknik. Boken <i>Electronic Communication Techniques</i> (ISBN 9780131228856) som jag använder i kursen Radio är utgiven av Pearson Education. Det borde rimligtvis innebära att den hade kunnat finnas digitalt på CourseSmart eftersom Pearson är en av partnerförlagen.</p>
 
-<p>CourseSmart har även tagit fram en <a href="http://itunes.apple.com/us/app/etextbooks-for-the-ipad/id364903557?mt=8">egen iPad-app</a> för att läsa e-böcker från dem:</p>
-
-<img src="http://a1.mzstatic.com/us/r1000/097/Purple/6a/8c/57/mzl.fkrtrbvx.480x480-75.jpg" alt="eTextbooks for the iPad" />
+<p>CourseSmart har även tagit fram en egen iPad-app för att läsa e-böcker från dem.</p>
 
 <p>En av de mindre positiva kommentarerna appen har fått i App Store är:</p>
 

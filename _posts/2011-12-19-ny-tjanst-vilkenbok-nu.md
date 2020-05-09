@@ -20,7 +20,7 @@ Tjänsten använder <i>LTHs KursAdministrativa system (KA) med kursanmälan för
 
 Med hjälp utav publika tjänster som <a href="http://books.google.se/" target="_blank">Google Books</a> och <a href="http://isbndb.com/" target="_blank">ISBNdb.com</a> görs ett uppslag för att kontrollera bokens titel och författare. All information sparas sedan i en databas och informationen förnyas en gång per läsår.
 
-Förutom att lista vilka böcker som används som kurslitteratur i en viss kurs finns även länkar till e-bokhandeln <a href="http://adlibris.se" target="_blank">Adlibris</a> och <a href="http://bokus.se" target="_blank">Bokus</a> samt <a href="http://bokfynd.se" target="_blank">Bokfynd</a> för att enkelt kunna jämföra priser och beställa böckerna.
+Förutom att lista vilka böcker som används som kurslitteratur i en viss kurs finns även länkar till e-bokhandeln <a href="https://www.adlibris.com/se" target="_blank">Adlibris</a> och <a href="http://bokus.se" target="_blank">Bokus</a> samt <a href="http://bokfynd.se" target="_blank">Bokfynd</a> för att enkelt kunna jämföra priser och beställa böckerna.
 
 <h2>Tekniken bakom</h2>
 

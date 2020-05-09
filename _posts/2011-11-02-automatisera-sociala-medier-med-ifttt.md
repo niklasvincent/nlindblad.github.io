@@ -19,12 +19,12 @@ Välj vilken plattform informationen ska hämtas från. Det kan vara allt ifrån
 
 För varje plattform ges valmöjligheter för vad som ska uppfyllas. I fallet med aktiepriser kan det vara 1) om priset överstiger ett visst värde eller 2) om priset understiger ett visst värde. När det gäller sociala medier handlar det huvudsakligen om nytt innehåll som publicerats. Det finns tyvärr ingen möjlighet att till exempel kräva att ett inlägg innehåller vissa ord.
 
-<img alt="Ett urval av tjänsterna som fungerar med IFTTT" src="https://d2tjdh98vh6jzp.cloudfront.net/wordpress/wp-content/uploads/2011/11/Skarmavbild-2011-11-02-kl.-15.32.57-300x274.png" title="Skärmavbild 2011-11-02 kl. 15.32.57" width="300" height="274" class="aligncenter size-medium wp-image-211" />
+<img alt="Ett urval av tjänsterna som fungerar med IFTTT" src="{{ site.cloudfront_url }}/wordpress/wp-content/uploads/2011/11/Skarmavbild-2011-11-02-kl.-15.32.57-300x274.png" title="Skärmavbild 2011-11-02 kl. 15.32.57" width="300" height="274" class="aligncenter size-medium wp-image-211" />
 
 <h2>if this then <b>that</b></h2>
 Nästa steg är att bestämma vad som ska hända ner villkoret är uppfyllt. I det här fallet kommer alla bilder från mitt användarkonto på Instagram att sparas till min Dropbox.
 
-<img alt="Exempel på ett recept" src="https://d2tjdh98vh6jzp.cloudfront.net/wordpress/wp-content/uploads/2011/11/Skarmavbild-2011-11-02-kl.-15.40.29.png" title="Skärmavbild 2011-11-02 kl. 15.40.29" width="500" height="177" class="aligncenter size-full wp-image-218" />
+<img alt="Exempel på ett recept" src="{{ site.cloudfront_url }}/wordpress/wp-content/uploads/2011/11/Skarmavbild-2011-11-02-kl.-15.40.29.png" title="Skärmavbild 2011-11-02 kl. 15.40.29" width="500" height="177" class="aligncenter size-full wp-image-218" />
 <h2>Möjligheter med tjänsten</h2>
 De funktioner som <b>ifttt</b> erbjuder hade inneburit flera veckors arbete att implementera från grunden. Tyvärr saknar jag redan en del saker som förhoppningsvis kommer i framtida versioner:
 

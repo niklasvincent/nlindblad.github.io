@@ -1,0 +1,51 @@
+https://keybase.io/nlindblad
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://niklaslindblad.se
+  * I am nlindblad (https://keybase.io/nlindblad) on keybase.
+  * I have a public key ASBEnrWN6BHDWT9Pgi8kcHD5HWmr7SqESagcNfB36iLfjQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120449eb58de811c3593f4f822f247070f91d69abed2a8449a81c35f077ea22df8d0a",
+            "host": "keybase.io",
+            "kid": "0120449eb58de811c3593f4f822f247070f91d69abed2a8449a81c35f077ea22df8d0a",
+            "uid": "9104d2051c86a78fb3dc68125a317d19",
+            "username": "nlindblad"
+        },
+        "service": {
+            "hostname": "niklaslindblad.se",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.17"
+    },
+    "ctime": 1473596892,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1473596840,
+        "hash": "f55bda7280b05390e1741c40407d81680d9f5db4784b85ba05d67029639f72b88fd270943b31cf01eb614418d81a56fbb73c069f07b615b50a23f36f62657b94",
+        "seqno": 629770
+    },
+    "prev": "d58abf33ca5b237fe5e13341564de5dda2e217268283479d9326979d4c5af8e5",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgRJ61jegRw1k/T4IvJHBw+R1pq+0qhEmoHDXwd+oi340Kp3BheWxvYWTFAvp7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNDQ5ZWI1OGRlODExYzM1OTNmNGY4MjJmMjQ3MDcwZjkxZDY5YWJlZDJhODQ0OWE4MWMzNWYwNzdlYTIyZGY4ZDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNDQ5ZWI1OGRlODExYzM1OTNmNGY4MjJmMjQ3MDcwZjkxZDY5YWJlZDJhODQ0OWE4MWMzNWYwNzdlYTIyZGY4ZDBhIiwidWlkIjoiOTEwNGQyMDUxYzg2YTc4ZmIzZGM2ODEyNWEzMTdkMTkiLCJ1c2VybmFtZSI6Im5saW5kYmxhZCJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoibmlrbGFzbGluZGJsYWQuc2UiLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xNyJ9LCJjdGltZSI6MTQ3MzU5Njg5MiwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDczNTk2ODQwLCJoYXNoIjoiZjU1YmRhNzI4MGIwNTM5MGUxNzQxYzQwNDA3ZDgxNjgwZDlmNWRiNDc4NGI4NWJhMDVkNjcwMjk2MzlmNzJiODhmZDI3MDk0M2IzMWNmMDFlYjYxNDQxOGQ4MWE1NmZiYjczYzA2OWYwN2I2MTViNTBhMjNmMzZmNjI2NTdiOTQiLCJzZXFubyI6NjI5NzcwfSwicHJldiI6ImQ1OGFiZjMzY2E1YjIzN2ZlNWUxMzM0MTU2NGRlNWRkYTJlMjE3MjY4MjgzNDc5ZDkzMjY5NzlkNGM1YWY4ZTUiLCJzZXFubyI6NywidGFnIjoic2lnbmF0dXJlIn2jc2lnxECHmJ16WqoStUswFMSp/xq0KaiTron5xgP0GvoJoSS+44fgabNZaadIUvLippMwAfhpj4fCf0csT7GcsIw6hY8NqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgkoBO0egq1QcJYpBI35fQHyiTfnBnxBJWy6gxrZxi2SGjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nlindblad

@@ -27,7 +27,7 @@ That would make re-deployments easier and make sure I can move to a new hosting 
 
 ## Use an asset pipeline for generating CSS
 
-I've been using [Grunt](http://gruntjs.com/) (even though [@mossisen](https://twitter.com/mossisen) politely pointed out I really should be using [Gulp](http://gulpjs.com/) instead).
+I've been using [Grunt](http://gruntjs.com/) (even though [@mossisen](http://mossisen.se/) politely pointed out I really should be using [Gulp](http://gulpjs.com/) instead).
 
 The [`Gruntfile.js`](https://github.com/nlindblad/nlindblad.github.io/blob/4f5c12cac5a064d7244bcae3d45e96115791a1e2/Gruntfile.js) is not that complicated, it basically compiles some SASS in `_sass` and minifies it together with some pre-compiled stylesheets in `_css`. The result is placed in `_includes` and is then included inline in each generated page, since I found that greatly increases page load time and the GZIP compression makes sure the final size of the HTML is in the range of 10 - 20 KB.
 
@@ -58,7 +58,7 @@ Here is a Gist for the Liquid template code required to achieve this:
 
 ## Timeline on the about page
 
-As my career has progressed, I decided to make a [visual timeline](/about.html#timeline) (based on [this example](http://codepen.io/P233/pen/lGewF)) instead of writing everything out in paragraphs.
+As my career has progressed, I decided to make a [visual timeline](/about.html#timeline) (based on <a href="https://codepen.io/P233/pen/lGewF" data-proofer-ignore>this example</a>) instead of writing everything out in paragraphs.
 
 ## Future changes
 
