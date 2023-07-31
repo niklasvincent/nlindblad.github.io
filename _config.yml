@@ -1,70 +1,80 @@
 highlighter: rouge
 permalink: /:year/:month/:title
-title : Niklas Lindblad
-canonical: https://niklaslindblad.se
-production_url : http://niklaslindblad.se
-cloudfront_url : https://cdn.niklaslindblad.se
-description: "Personal website for Niklas Lindblad, experienced software developer and MSc Nanoscience Engineering"
-disqus_shortname: nikaslindbladblog
+title: Niklas Vincent
+canonical: https://niklasvincent.se
+production_url: http://niklasvincent.se
+cloudfront_url: https://cdn.niklasvincent.se
+description: "Personal website for Niklas Vincent, experienced software developer and MSc Nanoscience Engineering"
 analytics: UA-25940343-1
-author :
-  name : Niklas Lindblad
-  github : nlindblad
-  twitter : nlindblad
-  email: niklas@lindblad.info
+author:
+  name: Niklas Vincent
+  github: niklasvincent
+  twitter: nlindblad
+  email: hey@niklasvincent.se
   url: https://plus.google.com/u/1/+NiklasLindblad
-exclude: ["_nginx", ".travis.yml", "Gemfile", "Gemfile.lock", "vendor", "Rakefile", "README.md", "package.json", "node_modules"]
+exclude:
+  [
+    "_nginx",
+    ".travis.yml",
+    "Gemfile",
+    "Gemfile.lock",
+    "vendor",
+    "Rakefile",
+    "README.md",
+    "package.json",
+    "node_modules",
+  ]
 include: [".well-known"]
-repository: nlindblad/nlindblad.github.io
-gems: ['jekyll-github-metadata']
-domain: niklaslindblad.se
+repository: niklasvincent/nlindblad.github.io
+gems: ["jekyll-github-metadata"]
+domain: niklasvincent.se
 dns_server: 8.8.8.8
 upstream_host: nlindblad.github.io
 additional_headers:
-    - X-Frame-Options: DENY
-    - X-Content-Type-Options: nosniff
-    - X-XSS-Protection: "1; mode=block"
+  - X-Frame-Options: DENY
+  - X-Content-Type-Options: nosniff
+  - X-XSS-Protection: "1; mode=block"
 unset_headers:
-    - X-Fastly-Request-ID
-    - X-GitHub-Request-Id
-    - X-Served-By
-    - X-Timer
-    - Via
-    - X-Cache
-    - X-Cache-Hits
+  - X-Fastly-Request-ID
+  - X-GitHub-Request-Id
+  - X-Served-By
+  - X-Timer
+  - Via
+  - X-Cache
+  - X-Cache-Hits
 content_security_policy:
-    script_src: "https://gist.github.com https://ssl.google-analytics.com"
-    style_src: "https://assets-cdn.github.com"
-    img_src: "https://ssl.google-analytics.com https://cdn.niklaslindblad.se"
+  script_src: "https://gist.github.com https://ssl.google-analytics.com"
+  style_src: "https://assets-cdn.github.com"
+  img_src: "https://ssl.google-analytics.com https://cdn.niklasvincent.se"
 strict_transport_security:
-    max_age: 63072000
+  max_age: 63072000
 public_key_pinning:
-    max_age: 5184000
-    pin_sha256s:
-        - kcCFX8bbXmtElrhKhNNzRvpCOPXPvZaCiNp69R5nvb8=
-        - Mj2sCR1US2XXNfIBvz1bKo8NjMk18xkK22KVwn/ISjY=
-        - rwxvPWImjxIYZEbFL9m2Ywz8UOGfKhA81F8N6So3tAs=
-        - IxoaPdnDs3BKIxzLNkAIqdUZ/tHfhM1vgyxsawp5W8E=
-        - sIAPhAmPel/UqoHwsN36oFwWBWcftqJPc3FR/5bxZF0=
-        - ZcfBIjbxUitQhkbu3EXW155OuxkHZyB/fdv+I2azeWQ=
-        - yHez8dSbIZdBPeLh/pMxF823NBScSm6vP7Ur7TtM3ps=
-        - Z0dedgSHAJcfySD72Cu/IvmbIqXTBRI1YO16Ky9kxXg=
-        - NguuvB5WoODUZEl9eI35tPVrsvqNff0iK2BqLI/cd0A=
-        - dS7lkSs8Ft7kDjlx49qoiCd+KmZO5dczUy9b3SZxUK8=
-        - CjM6HMDUvUtK0w25dTW/t39bDs0aK8hOHOAsnq2DHMU=
-        # Amazon Root CA 1
-        - ++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI=
-        # Amazon Root CA 2
-        - f0KW/FtqTjs108NpYj42SrGvOB2PpxIVM8nWxjPqJGE=
-        # Amazon Root CA 3
-        - NqvDJlas/GRcYbcWE8S/IceH9cq77kg0jVhZeAPXq8k=
-        # Amazon Root CA 4
-        - 9+ze1cZgR9KO1kZrVDxA4HQ6voHRCSVNz4RdTCx4U8U=
-        # lets-encrypt-x1-cross-signed.pem
-        - f9zjv0EDwmhLOtu1eSiEvUXHUJTCF3iIY5UDRveckKM=
-        # lets-encrypt-x2-cross-signed.pem
-        - 7AxspJamehM0L+xSIfaNSz5Tsbwi9uS8zJxo8EFc3qQ=
-        # lets-encrypt-x3-cross-signed.pem
-        - JYR9Zo608E/dQLErawdAxWfafQJDCOtsLJb+QdneIY0=
-        # lets-encrypt-x4-cross-signed.pem
-        - p0sMMrZblf4sT48JiUemi2lQM77QtR3YuYTsrolXG7Y=
+  max_age: 5184000
+  pin_sha256s:
+    - kcCFX8bbXmtElrhKhNNzRvpCOPXPvZaCiNp69R5nvb8=
+    - Mj2sCR1US2XXNfIBvz1bKo8NjMk18xkK22KVwn/ISjY=
+    - rwxvPWImjxIYZEbFL9m2Ywz8UOGfKhA81F8N6So3tAs=
+    - IxoaPdnDs3BKIxzLNkAIqdUZ/tHfhM1vgyxsawp5W8E=
+    - sIAPhAmPel/UqoHwsN36oFwWBWcftqJPc3FR/5bxZF0=
+    - ZcfBIjbxUitQhkbu3EXW155OuxkHZyB/fdv+I2azeWQ=
+    - yHez8dSbIZdBPeLh/pMxF823NBScSm6vP7Ur7TtM3ps=
+    - Z0dedgSHAJcfySD72Cu/IvmbIqXTBRI1YO16Ky9kxXg=
+    - NguuvB5WoODUZEl9eI35tPVrsvqNff0iK2BqLI/cd0A=
+    - dS7lkSs8Ft7kDjlx49qoiCd+KmZO5dczUy9b3SZxUK8=
+    - CjM6HMDUvUtK0w25dTW/t39bDs0aK8hOHOAsnq2DHMU=
+    # Amazon Root CA 1
+    - ++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI=
+    # Amazon Root CA 2
+    - f0KW/FtqTjs108NpYj42SrGvOB2PpxIVM8nWxjPqJGE=
+    # Amazon Root CA 3
+    - NqvDJlas/GRcYbcWE8S/IceH9cq77kg0jVhZeAPXq8k=
+    # Amazon Root CA 4
+    - 9+ze1cZgR9KO1kZrVDxA4HQ6voHRCSVNz4RdTCx4U8U=
+    # lets-encrypt-x1-cross-signed.pem
+    - f9zjv0EDwmhLOtu1eSiEvUXHUJTCF3iIY5UDRveckKM=
+    # lets-encrypt-x2-cross-signed.pem
+    - 7AxspJamehM0L+xSIfaNSz5Tsbwi9uS8zJxo8EFc3qQ=
+    # lets-encrypt-x3-cross-signed.pem
+    - JYR9Zo608E/dQLErawdAxWfafQJDCOtsLJb+QdneIY0=
+    # lets-encrypt-x4-cross-signed.pem
+    - p0sMMrZblf4sT48JiUemi2lQM77QtR3YuYTsrolXG7Y=
